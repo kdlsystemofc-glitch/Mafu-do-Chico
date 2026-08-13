@@ -3,6 +3,8 @@
   "name": "mafu-do-chico",
   "cleanUrls": true,
   "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/(.*)",
