@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mafuá do Chico — O Bar Mais Arretado do ABC | São Bernardo do Campo</title>
+  <meta name="description" content="Mafuá do Chico - Bar e Gastropub em São Bernardo do Campo. O famoso Torresmo dos Deuses, mandioca crocante, cerveja trincando no balde e música ao vivo desde 2020 em SBC.">
+  <meta name="keywords" content="Mafuá do Chico, Bar em São Bernardo do Campo, Torresmo dos Deuses, Gastropub SBC, Cerveja Gelada ABC, Música ao Vivo SBC, Bar Centro SBC">
+  <meta name="author" content="Mafuá do Chico">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mafuadochico.vercel.app/">
+  <meta property="og:title" content="Mafuá do Chico — O Bar Mais Arretado do ABC">
+  <meta property="og:description" content="O famoso Torresmo dos Deuses crocante na chapa, mandioca com alho frito, cerveja estupidamente gelada no balde e música ao vivo no Centro de São Bernardo do Campo.">
+  <meta property="og:image" content="https://mafuadochico.vercel.app/imagens/processed/tabletop-hero-r3.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mafuá do Chico — O Bar Mais Arretado do ABC">
+  <meta name="twitter:description" content="Torresmo dos Deuses na chapa, cerveja trincando no balde e música ao vivo em São Bernardo do Campo.">
+  <meta name="twitter:image" content="https://mafuadochico.vercel.app/imagens/processed/tabletop-hero-r3.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./imagens/imgi_19_AHRPTWnBlCS_v77BjcSvoIM6OiTIi_6TBKgu51MkbttJI6D1aV0RZru26dWivmKGzA1sxXp_w6O2Vt3Y3-yPr1w52uhjfLnE4TVCxSLNRuU_rwzI8wNyy1q1IfRaanU1v-PfHBJ5aAQ=s677-k-no.jpg">
+
+  <!-- Google Fonts matching Chobani Serif & Sans Geometry + Cursive Script Accent -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Schema.org JSON-LD Structured Data for Local Business / Bar -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Mafuá do Chico",
+    "image": "https://mafuadochico.vercel.app/imagens/processed/tabletop-hero-r3.jpg",
+    "@id": "https://mafuadochico.vercel.app/",
+    "url": "https://mafuadochico.vercel.app/",
+    "telephone": "+5511942658210",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Frei Gaspar, 45",
+      "addressLocality": "São Bernardo do Campo",
+      "addressRegion": "SP",
+      "postalCode": "09721-180",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.7135,
+      "longitude": -46.5492
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "103"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "15:00",
+        "closes": "23:59"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/mafuadochicobar"
+    ]
+  }
+  </script>
+
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- SCENE 0: STICKY NAVIGATION HEADER         -->
+  <!-- ========================================== -->
+  <header class="header" id="main-header" role="banner">
+    <div class="header-container">
+      
+      <!-- Left Column: Links + Outlined Pill Button -->
+      <nav class="header-left" aria-label="Navegação Principal Esquerda">
+        <a href="#porcoes" class="nav-link">Porções</a>
+        <a href="#cardapio" class="nav-link">Cardápio</a>
+        <a href="https://maps.google.com/?q=R.+Frei+Gaspar,+45+-+Centro,+S%C3%A3o+Bernardo+do+Campo+-+SP" target="_blank" rel="noopener noreferrer" class="btn-header-outline">
+          Onde estamos
+        </a>
+      </nav>
+
+      <!-- Center Column: Wordmark Brand Logo + Badge -->
+      <div class="header-center">
+        <a href="#" class="brand-wordmark" aria-label="Mafuá do Chico Bar - Página Inicial">
+          <span class="brand-badge-dot" aria-hidden="true"></span>
+          Mafuá do Chico.
+        </a>
+      </div>
+
+      <!-- Right Column: Links + Search Icon Button -->
+      <nav class="header-right" aria-label="Navegação Principal Direita">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#musica" class="nav-link">Música</a>
+        <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="nav-link">Contato</a>
+        
+        <button class="search-btn" aria-label="Buscar especialidade no cardápio">
+          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M19 18.4c0 .2-.1.4-.3.5s-.5.1-.7.1c-.2 0-.4-.1-.5-.2l-6.4-6.3C10 13.6 8.2 14.1 6.4 14S3 13 1.8 11.7C.6 10.3 0 8.6 0 6.8C.1 5 .8 3.3 2 2s3-2 4.8-2s3.5.6 4.9 1.8C13 3 13.8 4.6 14 6.4c.1 1.8-.4 3.6-1.5 4.9l6.4 6.4l0 0c.1.3.1.5.1.7zM12.1 4.9c-.3-.7-.7-1.3-1.2-1.8C10 2.2 8.8 1.7 7.5 1.5C6.3 1.4 5 1.7 3.9 2.4s-1.8 1.8-2.2 3C1.4 6.6 1.4 7.9 1.9 9.1s1.4 2.1 2.5 2.7c1.1.6 2.4.8 3.7.5c1.2-.2 2.4-.9 3.2-1.9s1.2-2.2 1.2-3.5C12.5 6.3 12.4 5.6 12.1 4.9z" fill="#1B3A32"/>
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-label="Menu Mobile">
+      <nav class="mobile-nav">
+        <a href="#porcoes" class="mobile-link">Porções Assinatura</a>
+        <a href="#cardapio" class="mobile-link">Cardápio Completo</a>
+        <a href="#musica" class="mobile-link">Música ao Vivo</a>
+        <a href="#sobre" class="mobile-link">Sobre o Bar</a>
+        <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="mobile-btn">Fazer Reserva no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- SCENE 1: INTEGRATED TABLETOP HERO          -->
+  <!-- ========================================== -->
+  <section class="hero-scene" id="hero" aria-label="Apresentação Principal">
+    <div class="hero-tabletop-bg"></div>
+    <div class="hero-container">
+      
+      <!-- Lower-Left Quadrant Typography Stack -->
+      <div class="hero-typography-stack">
+        
+        <!-- Local Identity Eyebrow -->
+        <span class="hero-eyebrow">
+          <span class="rating-star">★ 4,7</span> • DESDE 2020 • CENTRO SBC
+        </span>
+
+        <!-- Display Headline with Cursive Accent -->
+        <h1 class="hero-title">
+          Os Favoritos<br>
+          do Bar Mais <span class="script-accent">Arretado!</span>
+        </h1>
+        
+        <!-- CTA & Google Rating Badge -->
+        <div class="hero-cta-wrapper">
+          <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="btn-hero-pill">
+            Ver Cardápio & Reservas &rarr;
+          </a>
+          <span class="hero-social-proof">103+ avaliações no Google Maps</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 2: INTERACTIVE CATEGORY FINDER CANVAS -->
+  <!-- ========================================== -->
+  <section class="scene-finder" id="finder" aria-label="Busca de Especialidades">
+    <div class="finder-art-left" aria-hidden="true">🌵</div>
+    <div class="finder-art-right" aria-hidden="true">🍺</div>
+
+    <div class="finder-container">
+      <h2 class="finder-title">O que você deseja saborear hoje no Mafuá?</h2>
+      
+      <div class="finder-search-box">
+        <div class="search-icon-left" aria-hidden="true">🍴</div>
+        <input type="text" class="finder-input" placeholder="Digite torresmo, cerveja, feijoada, caipirinha..." aria-label="Digite uma porção ou bebida">
+      </div>
+
+      <!-- 6 Packshots Lineup -->
+      <div class="finder-lineup" role="list">
+        
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_19_AHRPTWnBlCS_v77BjcSvoIM6OiTIi_6TBKgu51MkbttJI6D1aV0RZru26dWivmKGzA1sxXp_w6O2Vt3Y3-yPr1w52uhjfLnE4TVCxSLNRuU_rwzI8wNyy1q1IfRaanU1v-PfHBJ5aAQ=s677-k-no.jpg" alt="Torresmo dos Deuses servido na chapa com alho frito" loading="lazy">
+          </div>
+          <span class="lineup-label">Torresmo dos Deuses</span>
+          <span class="lineup-sublabel">Carro-chefe na chapa</span>
+        </div>
+
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_27_AHRPTWm0XsXjy4WsU1SEwLjTBVJYcOq917BLL0DPIHV8uXsAxaemFxgYsjYqPkfH9d7kAf06giXG4HOyLcEaYd1HdIF2nRcRwMJRh_retow-oDrQ0_qMXcK2WdnbsnR12pxNCBvP3N_CXg=s677-k-no.jpg" alt="Mandioca frita crocante na chapa quente" loading="lazy">
+          </div>
+          <span class="lineup-label">Mandioca na Chapa</span>
+          <span class="lineup-sublabel">Com alho frito</span>
+        </div>
+
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_34_AHRPTWmhFAel4eBKifvVFv0W5vd3m5gQ7_0RLfFd3iB4Y5RlwDaq5sn5QOrx9Afm-KllnfyBJ0zg4pqT1Cf8xKItk8kN59KMmWuz1RsyErnYMkZLjHzLf2rWI4gFb6xvqgbChG2qdh8v=s677-k-no.jpg" alt="Drink gigante Red Bull preparado com frutas tropicais frescas" loading="lazy">
+          </div>
+          <span class="lineup-label">Drink Red Bull</span>
+          <span class="lineup-sublabel">Com frutas tropicais</span>
+        </div>
+
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_41_AHRPTWmumPDz3NNBsIAh5NBojKUbnK5v6Z8S38W35Jafp31o6bgbEjLHg-lmOTDPDEi_l_eK6G96GnQVr4fidX9gu54Nly5zb6d88QsM9Ur4a-zJ3nk7UbfyzNGZgQNEw7wPIeVif6BZ0Q=s677-k-no.jpg" alt="Balde amarelo da casa repleto de cervejas trincando de geladas" loading="lazy">
+          </div>
+          <span class="lineup-label">Cerveja Gelada</span>
+          <span class="lineup-sublabel">Balde trincando</span>
+        </div>
+
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_31_AHRPTWkAUbbUlpax6HztyXN6jE07e4soVgvl86Z-6i-ZhOPo_nfgoIU8cB14Qnln5VgI7d1B3o0kzXUXIlc6MwshZSDqSdLlJjTBJ4qxAxfuNg0COMjMOFLDo1AD5TCNFCeF4gjl9F3o=w203-h439-k-no.jpg" alt="Cumbuca de caldo caseiro bem quentinho com pão de alho" loading="lazy">
+          </div>
+          <span class="lineup-label">Caldo Quentinho</span>
+          <span class="lineup-sublabel">Com pão de alho</span>
+        </div>
+
+        <div class="lineup-item" role="listitem" tabindex="0">
+          <div class="lineup-img-wrapper">
+            <img src="./imagens/imgi_49_AHRPTWm0OV2QXREn62molbW8xg3yCVtQT-8Z2Rwcf-QSD18WC9jbAvq4bQxXtrbdhaJe9C9E-0LtEnO4FccxLAp84ZE9h9enVTDp78XMpcuYxovoyPbN6w7CAllNje4_4Q3x4W742-d_0g=s677-k-no.jpg" alt="Garrafa de cachaça artesanal Nêga Fulô envelhecida em carvalho" loading="lazy">
+          </div>
+          <span class="lineup-label">Nêga Fulô</span>
+          <span class="lineup-sublabel">Cachaça de alambique</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 3: CULINARY SHOWCASE (CAROUSEL GRID) -->
+  <!-- ========================================== -->
+  <section class="scene-cooking" id="porcoes" aria-label="Especialidades Culinárias">
+    <div class="cooking-container">
+      
+      <div class="cooking-header-wrapper">
+        <div class="cooking-title-stack">
+          <span class="scene-eyebrow">CULINÁRIA DO MAFUÁ</span>
+          <h2 class="scene-title">Porções & Especialidades da Casa</h2>
+          <p class="scene-subtitle">Porções fartas preparadas na hora com o tempero arretado da nossa cozinha no Centro de SBC.</p>
+        </div>
+        <div class="cooking-art-right" aria-hidden="true">🍳 🍺 🍋</div>
+      </div>
+
+      <!-- 4-Card Horizontal Carousel -->
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="cooking-carousel" role="region" aria-label="Carrossel de porções da casa">
+          
+          <article class="recipe-card">
+            <div class="card-img-holder">
+              <img src="./imagens/imgi_47_AHRPTWnPE7o2iUVdbr8VjI1S7O0y4iXXBWBQkS-8wdM0DIJAHLgHnmVwjRTsQD6g5cIJ-98DCk5TiRPmX1_KcsqOWAEcw8ny61bg_84nPz5FeOOhtYroK8HqYg4AP0nCJ7vL3YkWYoC7=s508-k-no.jpg" alt="Porção de Torresmo dos Deuses crocante com molho especial de alho" loading="lazy">
+            </div>
+            <div class="card-bottom-bar">
+              <span class="card-badge">PORÇÃO ASSINATURA</span>
+              <h3 class="card-title">Torresmo dos Deuses com Creme de Alho</h3>
+              <span class="card-tag-sub">Carro-chefe servido quentinho na chapa</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="card-img-holder">
+              <img src="./imagens/imgi_27_AHRPTWm0XsXjy4WsU1SEwLjTBVJYcOq917BLL0DPIHV8uXsAxaemFxgYsjYqPkfH9d7kAf06giXG4HOyLcEaYd1HdIF2nRcRwMJRh_retow-oDrQ0_qMXcK2WdnbsnR12pxNCBvP3N_CXg=s677-k-no.jpg" alt="Mandioca crocante dourada na chapa com pimenta biquinho fresca" loading="lazy">
+            </div>
+            <div class="card-bottom-bar">
+              <span class="card-badge">PORÇÃO NA CHAPA</span>
+              <h3 class="card-title">Mandioca Crocante com Pimenta Biquinho</h3>
+              <span class="card-tag-sub">Mandioca amarela frita com alho crocante</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="card-img-holder">
+              <img src="./imagens/imgi_31_AHRPTWkAUbbUlpax6HztyXN6jE07e4soVgvl86Z-6i-ZhOPo_nfgoIU8cB14Qnln5VgI7d1B3o0kzXUXIlc6MwshZSDqSdLlJjTBJ4qxAxfuNg0COMjMOFLDo1AD5TCNFCeF4gjl9F3o=w203-h439-k-no.jpg" alt="Caldo caseiro na cumbuca de barro acompanhado de pão de alho" loading="lazy">
+            </div>
+            <div class="card-bottom-bar">
+              <span class="card-badge">ESPECIALIDADE DA CASA</span>
+              <h3 class="card-title">Cumbuca de Caldo com Pão de Alho</h3>
+              <span class="card-tag-sub">Caldo suculento para noites aconchegantes</span>
+            </div>
+          </article>
+
+          <article class="recipe-card">
+            <div class="card-img-holder">
+              <img src="./imagens/imgi_75_AHRPTWmnVuFpYnxCEEwII4pVi6aYZdIONvZocfiAbagXNVhVvjnCxqg_Xbv2OU1iIyHLU7Wcg3hF9yp7A9v5U-kk-0pfCw4sfO6vJ5tA_TZ8gB2Qd_DDQs6iMO46HAW-lWHVZq64Bg=s677-k-no.jpg" alt="Prato executivo com espetinho suculento, baião de dois e farofa" loading="lazy">
+            </div>
+            <div class="card-bottom-bar">
+              <span class="card-badge">REFEIÇÃO INDIVIDUAL</span>
+              <h3 class="card-title">Espetinho Executivo com Tropeiro e Farofa</h3>
+              <span class="card-tag-sub">Prato completo com arroz, tropeiro e farofa</span>
+            </div>
+          </article>
+
+        </div>
+
+        <button class="carousel-arrow right-arrow" id="cooking-next" aria-label="Rolar carrossel de porções para a direita">&rsaquo;</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 4: BRAND MISSION & 4 PILLARS GRID    -->
+  <!-- ========================================== -->
+  <section class="scene-impact" id="sobre" aria-label="Pilares e Missão do Bar">
+    <div class="impact-border-art top-art" aria-hidden="true">🌵 ☀️ 🎶 🌵 ☀️ 🎶 🌵</div>
+    
+    <div class="impact-container">
+      <h2 class="impact-headline">O Que Faz do Mafuá o Bar Mais Arretado do ABC?</h2>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">🍳</div>
+          <h3 class="pillar-title">Culinária Afetiva</h3>
+          <p class="pillar-desc">Porções fartas, o famoso torresmo dos deuses e receitas preparadas com paixão e o tempero autêntico do Mafuá.</p>
+          <a href="#porcoes" class="btn-pillar-outline">Ver Cardápio</a>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">🍺</div>
+          <h3 class="pillar-title">Cerveja Trincando</h3>
+          <p class="pillar-desc">Cervejas trincando de geladas servidas no balde amarelo da casa para o seu copo nunca ficar vazio.</p>
+          <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="btn-pillar-outline">Nossas Cervejas</a>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">🎸</div>
+          <h3 class="pillar-title">Música ao Vivo</h3>
+          <p class="pillar-desc">Noites animadas com o melhor do sertanejo, MPB e artistas da nossa região promovendo momentos inesquecíveis.</p>
+          <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="btn-pillar-outline">Conhecer Agenda</a>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon" aria-hidden="true">🤝</div>
+          <h3 class="pillar-title">Hospitalidade do ABC</h3>
+          <p class="pillar-desc">Desde 2020 recebendo amigos e famílias no Centro de São Bernardo do Campo com atendimento acolhedor.</p>
+          <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="btn-pillar-outline">Fazer Reserva</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="impact-border-art bottom-art" aria-hidden="true">🌵 ☀️ 🎶 🌵 ☀️ 🎶 🌵</div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 5: NEWSROOM & EDITORIAL CARDS       -->
+  <!-- ========================================== -->
+  <section class="scene-newsroom" id="musica" aria-label="Música e Acontecimentos">
+    <div class="newsroom-container">
+      
+      <div class="newsroom-header">
+        <span class="scene-eyebrow">ACONTECE NO MAFUÁ</span>
+        <h2 class="scene-title">Música, Drinks & Momentos Inesquecíveis</h2>
+      </div>
+
+      <div class="newsroom-body">
+        <div class="newsroom-left-motif" aria-hidden="true">📢</div>
+
+        <div class="newsroom-carousel-wrapper">
+          <div class="newsroom-track" id="newsroom-carousel" role="region" aria-label="Carrossel de novidades e música ao vivo">
+            
+            <article class="news-card">
+              <img src="./imagens/imgi_61_AHRPTWl6ZTAY144kiwx7LxuPH_t_eaewvsTZCx5w829V1TlktIX_BSJlYuCBzAm0Yae3ctWTPMvQ_E4YeFgU71nTAi1h9Q6L2L4E7DxZXHWRyNGs8BfmHF_8BTzvcEgIX7C7fhrDzAp1=s677-k-no.jpg" alt="Apresentação musical ao vivo no bar Mafuá do Chico" loading="lazy">
+              <div class="news-overlay">
+                <span class="news-category">MÚSICA AO VIVO</span>
+                <h3 class="news-headline">Noites de Sertanejo e Shows Regionais no ABC</h3>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="./imagens/imgi_49_AHRPTWm0OV2QXREn62molbW8xg3yCVtQT-8Z2Rwcf-QSD18WC9jbAvq4bQxXtrbdhaJe9C9E-0LtEnO4FccxLAp84ZE9h9enVTDp78XMpcuYxovoyPbN6w7CAllNje4_4Q3x4W742-d_0g=s677-k-no.jpg" alt="Garrafas de cachaça tradicional brasileiras em exposição" loading="lazy">
+              <div class="news-overlay">
+                <span class="news-category">TRADIÇÃO DA CASA</span>
+                <h3 class="news-headline">Cachaças de Alambique Envelhecidas em Carvalho</h3>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="./imagens/imgi_34_AHRPTWmhFAel4eBKifvVFv0W5vd3m5gQ7_0RLfFd3iB4Y5RlwDaq5sn5QOrx9Afm-KllnfyBJ0zg4pqT1Cf8xKItk8kN59KMmWuz1RsyErnYMkZLjHzLf2rWI4gFb6xvqgbChG2qdh8v=s677-k-no.jpg" alt="Coquetel especial gigante servido no abacaxi com guarda-chuva decorativo" loading="lazy">
+              <div class="news-overlay">
+                <span class="news-category">COQUETELARIA</span>
+                <h3 class="news-headline">Drinks Gigantes & Especiais para Celebrar</h3>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="./imagens/imgi_41_AHRPTWmumPDz3NNBsIAh5NBojKUbnK5v6Z8S38W35Jafp31o6bgbEjLHg-lmOTDPDEi_l_eK6G96GnQVr4fidX9gu54Nly5zb6d88QsM9Ur4a-zJ3nk7UbfyzNGZgQNEw7wPIeVif6BZ0Q=s677-k-no.jpg" alt="Cerveja trincando no balde com avaliações 4.7 estrelas no Google Maps" loading="lazy">
+              <div class="news-overlay">
+                <span class="news-category">RECONHECIMENTO</span>
+                <h3 class="news-headline">Nota 4,7 no Google Maps por Mais de 100 Clientes</h3>
+              </div>
+            </article>
+
+          </div>
+
+          <button class="carousel-arrow right-arrow" id="newsroom-next" aria-label="Rolar carrossel de novidades para a direita">&rsaquo;</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 6: SPECIAL CAMPAIGN FEATURE (COMBO)  -->
+  <!-- ========================================== -->
+  <section class="scene-campaign" aria-label="Oferta Especial Combo Imbatível">
+    <div class="campaign-container">
+      
+      <!-- Floating Ingredients -->
+      <div class="floating-ingredient ing-1" aria-hidden="true">🍋</div>
+      <div class="floating-ingredient ing-2" aria-hidden="true">🧄</div>
+      <div class="floating-ingredient ing-3" aria-hidden="true">🌶️</div>
+
+      <div class="campaign-text-stack">
+        <h2 class="campaign-title">O Combo Imbatível do Mafuá</h2>
+        <p class="campaign-body">
+          Torresmo dos Deuses crocante + Mandioca na chapa + Cerveja estupidamente gelada no balde. A combinação que conquistou São Bernardo do Campo.
+        </p>
+        <a href="https://wa.me/5511942658210" target="_blank" rel="noopener noreferrer" class="btn-campaign-pill">
+          Pedir Pelo WhatsApp &rarr;
+        </a>
+      </div>
+
+      <!-- Bottom Anchored Product Trio -->
+      <div class="campaign-trio">
+        <div class="trio-item trio-left">
+          <img src="./imagens/imgi_27_AHRPTWm0XsXjy4WsU1SEwLjTBVJYcOq917BLL0DPIHV8uXsAxaemFxgYsjYqPkfH9d7kAf06giXG4HOyLcEaYd1HdIF2nRcRwMJRh_retow-oDrQ0_qMXcK2WdnbsnR12pxNCBvP3N_CXg=s677-k-no.jpg" alt="Chapa fumegante de torresmo com mandioca crocante" loading="lazy">
+        </div>
+        <div class="trio-item trio-center">
+          <img src="./imagens/imgi_41_AHRPTWmumPDz3NNBsIAh5NBojKUbnK5v6Z8S38W35Jafp31o6bgbEjLHg-lmOTDPDEi_l_eK6G96GnQVr4fidX9gu54Nly5zb6d88QsM9Ur4a-zJ3nk7UbfyzNGZgQNEw7wPIeVif6BZ0Q=s677-k-no.jpg" alt="Balde amarelo com garrafas de cerveja estupidamente geladas no gelo" loading="lazy">
+        </div>
+        <div class="trio-item trio-right">
+          <img src="./imagens/imgi_25_AHRPTWnlnnVeV-8ThideAsY2oo7bWiIoVTGauutTy6mtjJi6TGRlkUvDHTFc020gCZcB5vSAaGVIoF_n8qdAty5twpr7JaZzMjvfnNISde5dPkympNdtOGbzbNn_l1LYnXzy1Xms2XNy=s677-k-no.jpg" alt="Taça de drink artesanal ornamentado com morango e uva" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SCENE 7: FOOTER                           -->
+  <!-- ========================================== -->
+  <footer class="footer" id="contato" role="contentinfo">
+    <div class="footer-container">
+      
+      <!-- Top Row: Newsletter / Agenda VIP -->
+      <div class="footer-news-row">
+        <h3 class="footer-news-title">Receba a agenda semanal de música ao vivo e novidades do Mafuá</h3>
+        <form class="footer-input-group" onsubmit="event.preventDefault(); alert('Obrigado! E-mail cadastrado na lista VIP do Mafuá.');">
+          <input type="email" class="footer-email-input" placeholder="Digite seu e-mail aqui" aria-label="E-mail para receber agenda VIP" required>
+          <button type="submit" class="footer-btn-subscribe">Inscrever-se</button>
+        </form>
+      </div>
+
+      <!-- Directory Row -->
+      <div class="footer-directory">
+        <div class="footer-col">
+          <h4 class="col-title">Cardápio</h4>
+          <a href="#porcoes" class="footer-link">Porções Assinatura</a>
+          <a href="#porcoes" class="footer-link">Mandioca na Chapa</a>
+          <a href="#porcoes" class="footer-link">Drinks & Caipirinhas</a>
+          <a href="#porcoes" class="footer-link">Caldos Quentinhos</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">O Bar</h4>
+          <a href="#sobre" class="footer-link">Nossa História</a>
+          <a href="#sobre" class="footer-link">4 Pilares da Casa</a>
+          <a href="#musica" class="footer-link">Música ao Vivo</a>
+          <a href="#musica" class="footer-link">Avaliações no Google</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="col-title">Contato & Local</h4>
+          <span class="footer-info">R. Frei Gaspar, 45 - Centro</span>
+          <span class="footer-info">São Bernardo do Campo - SP, 09721-180</span>
+          <span class="footer-info">Tel / WhatsApp: (11) 94265-8210</span>
+          <a href="https://instagram.com/mafuadochicobar" target="_blank" rel="noopener noreferrer" class="footer-link highlight-link">@mafuadochicobar</a>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="footer-bottom-bar">
+        <span>© 2026 Mafuá do Chico Bar. Todos os direitos reservados.</span>
+        <span>7FJ2+XQ Centro, São Bernardo do Campo - SP</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript Behavior File -->
+  <script src="main.js"></script>
+
+</body>
+</html>
