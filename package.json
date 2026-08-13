@@ -1,4 +1,10 @@
 {
+  "name": "mafu-do-chico",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site ready'"
+  },
   "dependencies": {
     "playwright": "^1.62.1",
     "sharp": "^0.35.3"
